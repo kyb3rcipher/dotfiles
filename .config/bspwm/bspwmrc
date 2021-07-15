@@ -4,6 +4,7 @@ sxhkd &
 xrandr -s 1920x1080
 nitrogen --restore
 bash ~/.config/polybar/launch.sh
+flameshot
 
 bspc monitor -d I II III IV V VI VII VIII IX X
 

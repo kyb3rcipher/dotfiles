@@ -139,7 +139,9 @@ super + e
 # Burpsuite
 super + shift + p
 	burpsuite
-
+# Flameshot (screenshot)
+super + shift + s
+	flameshot gui
 # Nitrogen (wallpapers)
 alt + shift + w
 	nitrogen ~/.wallpapers
