@@ -3,6 +3,8 @@
 ## Installing dotfiles
 cp .zshrc .p10k.zsh .gitconfig ~/
 cp -r .config/* ~/.config
+# Creating folder wallpapers
+mkdir ~/.wallpapers
 # Installing Powerlevel10k
 git clone https://github.com/romkatv/powerlevel10k.git ~/.powerlevel10k
 # Installing sudo zsh plugin
