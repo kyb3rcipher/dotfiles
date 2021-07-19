@@ -27,4 +27,4 @@ rm FiraCode.zip
 ## Installing Polybar Fonts
 git clone https://github.com/adi1090x/polybar-themes.git
 cp -r polybar-themes/fonts/* .
-rm polybar-themes
+rm -rf polybar-themes

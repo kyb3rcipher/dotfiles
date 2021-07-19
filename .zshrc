@@ -14,6 +14,16 @@ alias catp='/usr/bin/bat'
 alias catn='/usr/bin/cat'
 alias less='bat --pager=never'
 
+# Shortcuts
+alias rmdir='rm -rf'
+alias devil='echo "$1" > ~/.devil.txt'
+alias good='rm ~/.devil.txt'
+alias mkw="mkdir {scans,informations,exploits,others}"
+#git
+gc='git commit -m "$1"'
+gp='git push'
+gl='git log'
+
 ### Colorize commands
 alias ip='ip --color=auto'
 alias pacman='pacman --color=auto'
