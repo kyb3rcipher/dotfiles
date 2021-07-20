@@ -20,9 +20,9 @@ alias devil='echo "$1" > ~/.devil.txt'
 alias good='rm ~/.devil.txt'
 alias mkw="mkdir {scans,informations,exploits,others}"
 #git
-alias ga="git add ."
-alias gc='git commit -m'
-alias gp='git push'
+alias gc='git add .;git commit -m'
+alias gp='git pull'
+alias gps='git push'
 alias gl='git log'
 
 ### Colorize commands
