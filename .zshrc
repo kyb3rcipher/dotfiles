@@ -1,6 +1,6 @@
 #
 # ZSH Shell config
-# Copyright (©) 2021 Kyb3r Fett <https://kyb3rfett.me>
+# Copyright (©) 2021 Kyb3r Vizsla <https://kyb3rvizsla.com>
 # LICENSE: MIT
 #
 
@@ -9,9 +9,10 @@ alias ls='lsd'
 alias ll='lsd -l'
 alias la='lsd -a'
 alias tree='lsd --tree'
-alias cat='bat --pager=never'
-alias catp='/usr/bin/bat'
-alias catn='/usr/bin/cat'
+alias cat="echo 'WTF, use kitty not cat!!!'"
+alias kitty='bat --pager=never'
+alias kittyo='/usr/bin/bat'
+alias kittyn='/usr/bin/cat'
 alias less='bat --pager=never'
 
 # Shortcuts
@@ -116,5 +117,6 @@ setopt hist_verify            # show command with history expansion to user befo
 
 # --------------------------------- Powerlevel10k -----------------------------------
 # Charge P10k
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-source ~/.powerlevel10k/powerlevel10k.zsh-theme
+source /home/kyb3r/.powerlevel10k/powerlevel10k.zsh-theme
+source /home/kyb3r/.p10k.zsh
+#source ~/.powerlevel10k/powerlevel10k.zsh-theme
