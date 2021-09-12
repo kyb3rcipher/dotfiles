@@ -17,21 +17,34 @@ alias less='bat --pager=never'
 
 # Shortcuts
 alias rmdir='rm -rf'
-alias devil='echo "$1" > ~/.devil.txt'
-alias good='rm ~/.devil.txt'
 alias mkw="mkdir {scans,informations,exploits,others}"
+alias sd='shutdown now'
 #git
 alias gc='git add .;git commit -m'
+alias gca='git commit -m'
 alias gp='git pull'
 alias gps='git push'
 alias gl='git log'
+alias gck='git checkout'
 
 ### Colorize commands
 alias ip='ip --color=auto'
 alias pacman='pacman --color=auto'
 
+### Without sudo commands
+#packages managers
+alias apt='sudo apt'
+alias dnf='sudo dnf'
+alias yum='sudo yum'
+alias pacman='sudo pacman'
+
+# Others
+alias su='sudo -i'
+alias vi='vim'
+alias nano='vim'
+
 # --------------------------------- Setting SHELL  -----------------------------------
-export VISUAL=vim
+export VISUAL=nvim
 export EDITOR=$VISUAL
 
 # Export PATH
@@ -120,3 +133,5 @@ setopt hist_verify            # show command with history expansion to user befo
 source /home/kyb3r/.powerlevel10k/powerlevel10k.zsh-theme
 source /home/kyb3r/.p10k.zsh
 #source ~/.powerlevel10k/powerlevel10k.zsh-theme
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
