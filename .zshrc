@@ -40,8 +40,9 @@ alias pacman='sudo pacman'
 
 # Others
 alias su='sudo -i'
-alias vi='vim'
-alias nano='vim'
+alias vim='nvim'
+alias vi='nvim'
+alias nano='nvim'
 
 # --------------------------------- Setting SHELL  -----------------------------------
 export VISUAL=nvim
@@ -130,8 +131,7 @@ setopt hist_verify            # show command with history expansion to user befo
 
 # --------------------------------- Powerlevel10k -----------------------------------
 # Charge P10k
-source /home/kyb3r/.powerlevel10k/powerlevel10k.zsh-theme
-source /home/kyb3r/.p10k.zsh
-#source ~/.powerlevel10k/powerlevel10k.zsh-theme
+source $HOME/.powerlevel10k/powerlevel10k.zsh-theme
+source $HOME/.p10k.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
