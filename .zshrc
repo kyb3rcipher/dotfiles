@@ -1,6 +1,6 @@
 #
 # ZSH Shell config
-# Copyright (©) 2021 Kyb3r Vizsla <https://kyb3rvizsla.com>
+# Copyright (©) 2021 Kyb3r Vizsla <kyb3rvizsla.com>
 # LICENSE: MIT
 #
 
@@ -36,6 +36,7 @@ alias pacman='pacman --color=auto'
 alias apt='sudo apt'
 alias dnf='sudo dnf'
 alias yum='sudo yum'
+alias snap='sudo sna'
 alias pacman='sudo pacman'
 
 # Others
