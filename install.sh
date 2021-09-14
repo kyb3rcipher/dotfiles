@@ -12,7 +12,3 @@ mkdir zsh-sudo
 cd zsh-sudo
 wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/plugins/sudo/sudo.plugin.zsh
 mv sudo.plugin.zsh zsh-sudo.zsh
-# Installing tmux conf
-git clone https://github.com/gpakosz/.tmux.git ~/.tmux
-ln -s -f .tmux/.tmux.conf
-cp .tmux/.tmux.conf.local .
