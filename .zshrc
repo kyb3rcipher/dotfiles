@@ -16,6 +16,7 @@ alias kittyn='/usr/bin/cat'
 alias less='bat --pager=never'
 
 # Shortcuts
+alias update='sudo dnf update -y'
 alias rmdir='rm -rf'
 alias mkw="mkdir {scans,informations,exploits,others}"
 alias sd='shutdown now'
@@ -44,7 +45,7 @@ alias su='sudo -i'
 alias vim='nvim'
 alias vi='nvim'
 alias nano='nvim'
-
+alias pgp='gpg'
 # --------------------------------- Setting SHELL  -----------------------------------
 export VISUAL=nvim
 export EDITOR=$VISUAL
