@@ -14,6 +14,7 @@ alias kitty='bat --pager=never'
 alias kittyo='/usr/bin/bat'
 alias kittyn='/usr/bin/cat'
 alias less='bat --pager=never'
+alias ifconfig="echo 'WTF, use ip a not ifconfig!!!'"
 
 # Shortcuts
 alias update='sudo dnf update -y'
