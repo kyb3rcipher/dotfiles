@@ -159,5 +159,21 @@ POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon root_indicator ssh dir dir_writable v
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(vi_mode status command_execution_time background_jobs time ram)
 unset s
 
+# Switch multiline promt P10K)
+switch_powerlevel_multiline_prompt(){
+	if [ "$POWERLEVEL9K_PROMPT_ON_NEWLINE" = "true" ]; then
+	POWERLEVEL9K_PROMPT_ON_NEWLINE=false
+	typeset -g POWERLEVEL9K_LEFT_PROMPT_FIRST_SEGMENT_START_SYMBOL='░▒▓'
+	echo -e "\n"
+	else;
+	POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+	POWERLEVEL9K_LEFT_PROMPT_FIRST_SEGMENT_START_SYMBOL='\uE0B2'
+	echo -e "\n"
+	fi
+	zle && zle accept-line
+}
+zle -N switch_powerlevel_multiline_prompt
+bindkey ^P switch_powerlevel_multiline_prompt
+
 # FZF load
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
