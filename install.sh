@@ -2,7 +2,7 @@
 
 # Installing dotfiles
 cp -r . ~
-rm  ~/install.sh ~/README ~/LICENSE
+rm -rf ~/.git ~/install.sh ~/README.md ~/LICENSE
 # Installing Powerlevel10k
 git clone https://github.com/romkatv/powerlevel10k.git ~/.powerlevel10k
 # Installing sudo zsh plugin
