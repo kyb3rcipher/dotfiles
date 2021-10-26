@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ## Installing dotfiles
-cp .zshrc .p10k.zsh .gitconfig .vimrc ~/
+cp .zshrc .gitconfig .vimrc ~/
 # Installing Powerlevel10k
 git clone https://github.com/romkatv/powerlevel10k.git ~/.powerlevel10k
 # Installing sudo zsh plugin
