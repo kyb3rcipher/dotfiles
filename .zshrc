@@ -92,10 +92,12 @@ setopt hist_ignore_space      # ignore commands that start with space
 setopt hist_verify            # show command with history expansion to user before running it
 #setopt share_history         # share command history data
 
-# --------------------------------- Powerlevel10k -----------------------------------
-# Charge P10k
-source $HOME/.powerlevel10k/powerlevel10k.zsh-theme
+# --------------------------------- PROMPT -----------------------------------
+PROMPT="%f%F{red}┌─[%F{white}$USER%B%F{yellow}@%f%F{cyan}%m%f%F{red}]─[%f%F{magenta}%(6~.%-1~/…/%4~.%5~)%f%F{red}]%f"$'\n'"%F{red}└──╼ %f%F{green}%F{yellow}$%b%F{reset}"
 
+# Powerlevel10K (P10k)
+if source ~/.powerlevel10k/powerlevel10k.zsh-theme 2> /dev/null
+then;
 # P10K Config by: <drasite.com>
 s=' ' # fix too wide icons
 POWERLEVEL9K_MODE=nerdfont-complete
@@ -175,5 +177,8 @@ switch_powerlevel_multiline_prompt(){
 zle -N switch_powerlevel_multiline_prompt
 bindkey ^P switch_powerlevel_multiline_prompt
 
+else;
+echo '\e[0;31m\e[1m[\e[0;33m\e[1m!\e[0;31m\e[1m] \e[0;33m\e[1mZSH powerlevel10k not installed! \n'
+fi;
 # FZF load
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
