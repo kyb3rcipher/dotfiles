@@ -11,7 +11,7 @@ alias ifconfig="echo 'WTF, use ip a not ifconfig!!!'"
 alias ifconfign="/usr/bin/ifconfig"
 
 # Shortcuts
-alias update='sudo dnf update -y'
+alias update='sudo apt update && sudo apt upgrade -y'
 alias rmdir='rm -rf'
 alias mkw="mkdir {scans,informations,exploits,others}"
 alias sd='shutdown now'

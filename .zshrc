@@ -162,7 +162,7 @@ POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon root_indicator ssh dir dir_writable v
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(vi_mode status command_execution_time background_jobs time ram)
 unset s
 
-# Switch multiline promt P10K)
+# Switch multiline prompt (p10K)
 switch_powerlevel_multiline_prompt(){
 	if [ "$POWERLEVEL9K_PROMPT_ON_NEWLINE" = "true" ]; then
 	POWERLEVEL9K_PROMPT_ON_NEWLINE=false
