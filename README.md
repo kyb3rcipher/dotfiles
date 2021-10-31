@@ -9,6 +9,6 @@ git clone https://github.com/kyb3rvizsla/.dotfiles
 ./install.sh
 ```
 
-I use [Fedora](https://getfedora.org/en/server/download) btw.
+Btw i use [Debian](https://debian.org).
 
 My neovim/vim configuration [here](https://github.com/spawmc/Neovim-SFW).

@@ -183,3 +183,5 @@ echo '\e[0;31m\e[1m[\e[0;33m\e[1m!\e[0;31m\e[1m] \e[0;33m\e[1mZSH powerlevel10k 
 fi;
 # FZF load
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+echo $! > /dev/null
