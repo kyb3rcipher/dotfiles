@@ -9,6 +9,6 @@ git clone https://github.com/kyb3rvizsla/.dotfiles
 ./install.sh
 ```
 
-Btw i use [Debian](https://debian.org).
+Btw i use [Ubuntu](https://ubuntu.com).
 
 My neovim/vim configuration [here](https://github.com/spawmc/Neovim-SFW).
