@@ -1,0 +1,21 @@
+[user]
+	name = 
+	email = 
+	signingkey = 
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = auto
+	ui = true
+	pager = true
+[commit]
+	gpgSign = true
+[alias]
+    c = "add . && commit -m"
+    p = "push origin"
+    pl = "pull origin"
+[credential]
+	helper = /usr/share/doc/git/contrib/credential/libsecret/git-credential-libsecret
+[init]
+	defaultBranch = main
