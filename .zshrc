@@ -5,7 +5,7 @@
 #
 
 # --------------------------------- ALIASES -----------------------------------
-source ~/.aliases.sh
+source ~/.aliases-functions.sh
 
 # --------------------------------- Setting SHELL  -----------------------------------
 export VISUAL=nvim

@@ -20,6 +20,14 @@ alias ginit='git init && git add . && git commit -m "Initial commit"'
 alias gc='git add . && git commit -m'
 alias gp='git push origin'
 alias gpl='git pull origin'
+gragl(){
+    git remote add gitlab https://gitlab.com/kyb3rvizsla/$1.git
+}
+#git all push gitlab and github (for mirrors)
+gpfa(){
+    git push origin -f
+    git push gitlab -f
+}
 
 ### Colorize commands
 alias ip='ip --color=auto'
