@@ -4,7 +4,7 @@ Yeah, this is a simple but stupid dotfiles.
 
 Installation:
 ```shell
-git clone https://github.com/kyb3rvizsla/.dotfiles
+git clone https://github.com/kyb3rtarre/.dotfiles
 .dotfiles
 ./install.sh
 ```

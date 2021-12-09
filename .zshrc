@@ -1,6 +1,6 @@
 #
 # ZSH Shell config
-# Copyright (©) 2021 Kyb3r Vizsla <kyb3rvizsla.com>
+# Copyright (©) 2021 Kyb3r Tarre <kyb3rtarre.com>
 # LICENSE: MIT
 #
 
