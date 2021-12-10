@@ -2,18 +2,13 @@ alias ls='lsd'
 alias ll='ls -l'
 alias la='ls -a'
 alias tree='lsd --tree'
-alias kitty='bat --pager=never'
-alias kittyo='bat'
-alias kittyn='/usr/bin/cat'
+alias cat='bat --pager=never'
+alias catn='bat'
 alias less='bat --pager=never'
-alias cat="echo 'WTF, use kitty not cat!!!'"
-alias ifconfig="echo 'WTF, use ip a not ifconfig!!!'"
-alias ifconfign="/usr/sbin/ifconfig"
 
 # Shortcuts
 alias update='sudo apt update && sudo apt upgrade -y'
 alias rmdir='rm -rf'
-alias mkw='mkdir {scans,informations,exploits,others}'
 #git
 alias g='git'
 alias ginit='git init && git add . && git commit -m "Initial commit"'
@@ -21,7 +16,7 @@ alias gc='git add . && git commit -m'
 alias gp='git push origin'
 alias gpl='git pull origin'
 gragl(){
-    git remote add gitlab https://gitlab.com/kyb3rvizsla/$1.git
+    git remote add gitlab https://gitlab.com/kyb3rcipher/$1.git
 }
 #git all push gitlab and github (for mirrors)
 gpfa(){
@@ -45,6 +40,3 @@ alias pacman='sudo pacman'
 # Others
 alias su='sudo su'
 alias vim='nvim'
-alias vi='nvim'
-alias nano='nvim'
-alias pgp='gpg'
