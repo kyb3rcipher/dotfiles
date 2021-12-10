@@ -1,10 +1,9 @@
 alias ls='lsd'
 alias ll='ls -l'
 alias la='ls -a'
-alias tree='lsd --tree'
 alias cat='bat --pager=never'
 alias catn='bat'
-alias less='bat --pager=never'
+alias tree='lsd --tree'
 
 # Shortcuts
 alias update='sudo apt update && sudo apt upgrade -y'
@@ -15,14 +14,6 @@ alias ginit='git init && git add . && git commit -m "Initial commit"'
 alias gc='git add . && git commit -m'
 alias gp='git push origin'
 alias gpl='git pull origin'
-gragl(){
-    git remote add gitlab https://gitlab.com/kyb3rcipher/$1.git
-}
-#git all push gitlab and github (for mirrors)
-gpfa(){
-    git push origin -f
-    git push gitlab -f
-}
 
 ### Colorize commands
 alias ip='ip --color=auto'
