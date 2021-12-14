@@ -7,7 +7,7 @@ if [ -f /usr/bin/lsd ]; then
 	alias tree='lsd --tree'
 fi
 if [ -f /usr/bin/bat ]; then
-	alias cat='bat --page=never'
+	alias cat='bat --pager=never'
 fi
 
 # Shortcuts
