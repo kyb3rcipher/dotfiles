@@ -15,6 +15,7 @@ alias update='sudo apt update && sudo apt upgrade -y'
 alias rmdir='rm -rf'
 alias apt='sudo apt'
 alias su='sudo su'
+alias g='git'
 
 # Others
 alias ip='ip --color=auto'
