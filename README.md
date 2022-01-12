@@ -5,6 +5,7 @@
 - os: `Ubuntu`
 - wm: `GNOME 40`
 - shell: `bash`
+- editor: `neovim`
 
 ## Installation
 To install my dotfiles, assuming stow is installed, simply:
