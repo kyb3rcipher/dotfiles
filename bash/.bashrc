@@ -1,13 +1,14 @@
 # prompt (by: @jallbrit)
+BOLD="\[$(tput bold)\]"	# colors for promt
+DARK_RED="\[$(tput setaf 9)\]"
+DARK_GREEN="\[$(tput setaf 10)\]"
+DARK_ORANGE="\[$(tput setaf 11)\]"
+DARK_BLUE="\[$(tput setaf 12)\]"
+DARK_PURPLE="\[$(tput setaf 13)\]"
+DARK_WHITE="\[$(tput setaf 15)\]"
+RESET="\[$(tput sgr0)\]"
+
 __prompt_command() {
-	BOLD="\[$(tput bold)\]"	# colors
-	DARK_RED="\[$(tput setaf 9)\]"
-	DARK_GREEN="\[$(tput setaf 10)\]"
-	DARK_ORANGE="\[$(tput setaf 11)\]"
-	DARK_BLUE="\[$(tput setaf 12)\]"
-	DARK_PURPLE="\[$(tput setaf 13)\]"
-	DARK_WHITE="\[$(tput setaf 15)\]"
-	RESET="\[$(tput sgr0)\]"
 	returnValue="$?"
 	. ~/.bash_git	# source git bash prompt
 
