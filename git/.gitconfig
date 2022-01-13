@@ -1,0 +1,12 @@
+[user]
+	name = Kyb3r Cipher
+	email = me@kyb3rcipher.com
+	signingkey = 
+[init]
+	defaultBranch = main
+[credential]
+	helper = cache --timeout=3600
+
+# advanced config (u need configure somethings)
+#[commit]
+#	gpgsign = true
