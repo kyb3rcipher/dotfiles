@@ -6,10 +6,12 @@ alias apt='sudo apt'
 alias pacman='pacman --color=auto'
 
 # shortcuts
-alias v='nvim'
+alias v='vim'
 alias g='git'
+alias gc='git commit'
+alias gp='git push'
 alias lla='ls -la'
-alias rmvimswap="rm -rf ~/.local/share/nvim/swap"
+alias rmvimswap='rm -rf ~/.local/share/nvim/swap'
 alias update='apt update && apt upgrade -y && apt autoremove -y'
 
 # better commands
