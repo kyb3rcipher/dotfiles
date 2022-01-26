@@ -17,4 +17,4 @@ stow <sofware/package name, ex. bash, neovim, git, etc.>
 ```
 Or without stow you should clone the repo and then copy the software files to your local folder.<br>
 
-**For update**: just update this repo with `git pull origin main`, or manual redownload and reinstall.
+**For update**: just update this repo with `git pull`, or manual redownload and reinstall.
