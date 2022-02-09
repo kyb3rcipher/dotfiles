@@ -15,6 +15,8 @@ alias gp='git push'
 alias gl='git log'
 alias fuck='sudo $(history -p \!\!)'
 alias lla='ls -la'
+alias .b='nvim ~/.bash_aliases'
+alias .v='nvim ~/.config/nvim/init.vim'
 alias rmvimswap='rm -rf ~/.local/share/nvim/swap'
 alias update='apt update && apt upgrade -y && apt autoremove -y'
 
