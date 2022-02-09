@@ -5,10 +5,14 @@ set wrap! "toggle word wrap
 set number relativenumber "lines number
 
 " Shortcuts
+let mapleader=" "
 "escape shortcut
 :imap jj <Esc>
+map <Leader>q :q<CR>
 "plugin: 'git-messenger.vim' shortcut
-nmap <C-w> <Plug>(git-messenger) 
+nmap <C-w> <Plug>(git-messenger)
+"plugin: 'files-tree' shortcut
+map <Leader>b :NERDTreeFind<CR>
 
 " Keyboard keys config
 "switch tabs 
