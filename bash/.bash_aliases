@@ -21,5 +21,5 @@ alias rmvimswap='rm -rf ~/.local/share/nvim/swap'
 alias update='apt update && apt upgrade -y && apt autoremove -y'
 
 # better commands
-command -v lsd > /dev/null && alias ls='lsd --group-dirs=first'
+command -v exa > /dev/null && alias ls='exa --icons --git'
 command -v bat > /dev/null && alias cat='bat --pager=never' && alias catn='/usr/bin/cat'
