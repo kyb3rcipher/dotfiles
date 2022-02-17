@@ -33,6 +33,7 @@ set autoindent
 " Plugins
 call plug#begin()
 " Utilities
+Plug 'neoclide/coc.nvim', {'branch': 'release'}	"lsp
 Plug 'airblade/vim-gitgutter' "git changes marker
 Plug 'tpope/vim-fugitive' "git wrapper
 Plug 'rhysd/git-messenger.vim' "git changes marks
