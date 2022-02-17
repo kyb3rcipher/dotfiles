@@ -15,10 +15,12 @@ alias gp='git push'
 alias gl='git log'
 alias fuck='sudo $(history -p \!\!)'
 alias lla='ls -la'
+alias reload='source ~/.bashrc'
 alias .b='nvim ~/.bash_aliases'
 alias .v='nvim ~/.config/nvim/init.vim'
 alias rmvimswap='rm -rf ~/.local/share/nvim/swap'
 alias update='apt update && apt upgrade -y && apt autoremove -y'
+command -v python3 > /dev/null && alias python='python3'	#python is python3
 
 # better commands
 command -v exa > /dev/null && alias ls='exa --icons --git'
