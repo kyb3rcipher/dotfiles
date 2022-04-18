@@ -13,5 +13,5 @@ First put this folder to you local neovim config folder. Later install [vim-plug
 And everything will be ready :smile:
 
 ### Screenshots
-![nvim](images/neovim.png)
-![nvim-insert](images/neovim-insert.png)
+![nvim](../../../images/nvim.png)
+![nvim-insert](../../../images/nvim-insert.png)
