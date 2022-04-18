@@ -1,4 +1,5 @@
 # prompt (by: @jallbrit)
+if [[ $- == *i* ]]; then
 BOLD="\[$(tput bold)\]"	# colors for promt
 DARK_RED="\[$(tput setaf 9)\]"
 DARK_GREEN="\[$(tput setaf 10)\]"
@@ -7,6 +8,7 @@ DARK_BLUE="\[$(tput setaf 12)\]"
 DARK_PURPLE="\[$(tput setaf 13)\]"
 DARK_WHITE="\[$(tput setaf 15)\]"
 RESET="\[$(tput sgr0)\]"
+fi
 
 __prompt_command() {
 	returnValue="$?"
