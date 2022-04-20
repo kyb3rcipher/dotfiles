@@ -22,6 +22,9 @@ case "$TERM" in
 	*) PS1='[\u@\h:\w]\$ ' ;;
 esac
 
+# PATH
+export PATH=~/.local/bin:/snap/bin:/usr/sandbox/:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/share/games:/usr/local/sbin:/usr/sbin:/sbin:$PATH
+
 # source files
 [ -f ~/.bash_aliases ] && . ~/.bash_aliases
 [ -f ~/.bash_custom ] && . ~/.bash_custom

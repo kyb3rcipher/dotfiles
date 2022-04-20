@@ -42,7 +42,7 @@ Plug 'preservim/nerdtree' "files-tree panel
 Plug 'ryanoasis/vim-devicons' "vim icons (icons for files-tree)
 
 " Style
-Plug 'folke/tokyonight.nvim' "theme
+Plug 'navarasu/onedark.nvim' "theme
 Plug 'romgrk/barbar.nvim' "tab-navbar
 Plug 'nvim-lualine/lualine.nvim' "dock-bar
 Plug 'kyazdani42/nvim-web-devicons' "icons
@@ -52,7 +52,7 @@ call plug#end()
 set updatetime=000 "git changes marks init/update time
 let NERDTreeShowHidden=1
 nnoremap <C-b> :NERDTree<CR>
-source $HOME/.config/nvim/config/tokyonight.vim "theme
+source $HOME/.config/nvim/config/theme.vim "theme
 source $HOME/.config/nvim/config/discord-presence.vim "discord presence
 "lua config
 lua << EOF
