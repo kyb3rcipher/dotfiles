@@ -23,5 +23,6 @@ alias update='apt update && apt upgrade -y && apt autoremove -y'
 command -v python3 > /dev/null && alias python='python3'	#python is python3
 
 # better commands
+command -v trash > /dev/null && alias rm='trash'
 command -v exa > /dev/null && alias ls='exa --icons --git'
 command -v bat > /dev/null && alias cat='bat --pager=never' && alias catn='/usr/bin/cat'

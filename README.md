@@ -2,9 +2,9 @@
 
 ## Introduction
 
-- os: `Ubuntu`
-- wm: `GNOME 40`
-- shell: `bash`
+- os: `Linux (debian or based)`
+- wm: `GNOME 4.x`
+- shell: `zsh`
 - editor: `neovim`
 
 ## Installation
