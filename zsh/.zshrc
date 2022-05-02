@@ -18,19 +18,15 @@ zstyle ':vcs_info:*' check-for-changes true
 zstyle ':vcs_info:git:*' formats " %{$fg[yellow]%}%b%{$fg[red]%}%m%u%c"	# vcs style
 
 # prompt (by: @jallbrit)
-PROMPT="%B%{$fg[red]%}[%(?:$fg[yellow]:%{$fg[red]%})% %n%{$fg[green]%}@%{$fg[blue]%}%m\$vcs_info_msg_0_ %{$fg[magenta]%}%c%{$fg[red]%}%(?:: ✗)]%{$fg[white]%}$%{$reset_color%} "
+PROMPT="%B%{$fg[red]%}[%(?:%{$fg[yellow]%}:%{$fg[red]%})% %n%{$fg[green]%}@%{$fg[blue]%}%m\$vcs_info_msg_0_ %{$fg[magenta]%}%c%{$fg[red]%}%(?:]: ✗])%{$fg[white]%}$%{$reset_color%} "
 
 # PATH
 export PATH="$HOME/.local/bin":$PATH
 
 # history
-HISTFILE=~/.zsh_history
 HISTSIZE=1000
-SAVEHIST=2000
-setopt hist_expire_dups_first # delete duplicates first when HISTFILE size exceeds HISTSIZE
-setopt hist_ignore_dups       # ignore duplicated commands history list
-setopt hist_ignore_space      # ignore commands that start with space
-setopt hist_verify
+SAVEHIST=1000
+HISTFILE=~/.zsh_history
 
 # plugins
 [ -f /etc/zsh_command_not_found ] && . /etc/zsh_command_not_found
