@@ -10,3 +10,5 @@
 # advanced config (u need configure somethings)
 #[commit]
 #	gpgsign = true
+#[credential]
+#	helper = /usr/share/doc/git/contrib/credential/libsecret/git-credential-libsecret
