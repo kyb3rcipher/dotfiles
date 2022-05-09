@@ -83,5 +83,5 @@ fi
 [ -f ~/.zsh_custom ] && . ~/.zsh_custom
 
 # sets defaults for applications
-export VISUAL=vim
+export VISUAL=nvim
 export EDITOR="$VISUAL"

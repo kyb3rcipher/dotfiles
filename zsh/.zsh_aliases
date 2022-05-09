@@ -6,18 +6,19 @@ alias apt='sudo apt'
 alias pacman='pacman --color=auto'
 
 # shortcuts
-alias v='vim'
+alias v='nvim'
 alias g='git'
 alias ga='git add'
 alias gs='git status'
 alias gc='git commit'
 alias gp='git push'
 alias gl='git log'
-alias fuck='sudo $(history -p \!\!)'
+alias gcl='git clone'
+alias gdlc='git reset --hard HEAD^'	# git delete lasted commit
 alias lla='ls -la'
+alias fuck='sudo $(history -p \!\!)'
 alias reload='source ~/.zshrc'
-alias .z='nvim ~/.zshrc && source ~/.zshrc'
-alias .v='nvim ~/.config/nvim/init.vim'
+alias incognito='unset HISTFILE'
 alias rmvimswap='rm -rf ~/.local/share/nvim/swap'
 alias icat='kitty +kitten icat'	# print images on terminal (only with kitty)
 alias update='apt update && apt upgrade -y && apt autoremove --purge -y && apt clean all -y'
