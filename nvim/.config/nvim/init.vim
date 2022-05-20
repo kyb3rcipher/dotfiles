@@ -2,6 +2,7 @@
 set encoding=UTF-8
 set clipboard=unnamedplus "copy vim clipboard to system
 set wrap! "toggle word wrap
+set noswapfile
 set number relativenumber "lines number
 
 " Shortcuts

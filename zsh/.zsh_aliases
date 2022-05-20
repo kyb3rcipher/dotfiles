@@ -3,7 +3,7 @@ alias ls='ls --color=auto'
 alias ip='ip --color=auto'
 alias rmdir='rm -rf'
 alias apt='sudo apt'
-alias pacman='pacman --color=auto'
+alias pacman='sudo pacman --color=auto'
 
 # shortcuts
 alias v='nvim'
@@ -14,12 +14,14 @@ alias gc='git commit'
 alias gp='git push'
 alias gl='git log'
 alias gcl='git clone'
+alias gck='git checkout'
 alias gdlc='git reset --hard HEAD^'	# git delete lasted commit
 alias lla='ls -la'
 alias fuck='sudo $(history -p \!\!)'
 alias reload='source ~/.zshrc'
 alias incognito='unset HISTFILE'
 alias rmvimswap='rm -rf ~/.local/share/nvim/swap'
+[ $TERM = "xterm-kitty" ] && alias ssh="kitty +kitten ssh"
 alias icat='kitty +kitten icat'	# print images on terminal (only with kitty)
 alias update='apt update && apt upgrade -y && apt autoremove --purge -y && apt clean all -y'
 command -v python3 > /dev/null && alias python='python3'	#python is python3
