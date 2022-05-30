@@ -30,6 +30,6 @@ function rmk(){
 }
 
 # better commands
-command -v trash > /dev/null && alias rm='trash' && alias rmo='/usr/bin/rm'
+command -v trash > /dev/null && alias rm='trash' && alias rm-list='trash-list' && alias rm-rm='trash-rm' && alias rm-empty='trash-empty' && alias rmo='/usr/bin/rm -i' && alias rmdiro='/usr/bin/rm -rf'
 command -v exa > /dev/null && alias ls='exa --icons --git'
 command -v bat > /dev/null && alias cat='bat --pager=never' && alias catp='bat --paging=never --style=plain' && alias catn='/usr/bin/cat'

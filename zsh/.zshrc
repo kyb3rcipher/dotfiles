@@ -30,10 +30,16 @@ HISTFILE=~/.zsh_history
 
 # plugins
 [ -f /etc/zsh_command_not_found ] && . /etc/zsh_command_not_found
-[ -f /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh ] && . /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh && ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#999'
+# highlighting
+if [ -f /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh ] || [ -f /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh ]; then
+	[ -f /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh ] && _zsh_autosuggentions=/usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh || _zsh_autosuggentions=/usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+	. $_zsh_autosuggentions
+	ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#999'
+fi
 # syntax
-if [ -f /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then
-	. /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+if [ -f /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] || [ -f /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then
+	[ -f /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && _zsh_highlighting=/usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh || _zsh_highlighting=/usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+	. $_zsh_highlighting
 	ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern)
 	ZSH_HIGHLIGHT_STYLES[default]=none
     ZSH_HIGHLIGHT_STYLES[unknown-token]=fg=red,bold
