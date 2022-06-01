@@ -2,6 +2,7 @@
 set encoding=UTF-8
 set clipboard=unnamedplus "copy vim clipboard to system
 set wrap! "toggle word wrap
+set mouse=a	"enable mouse, cuz idc if u hate the mouse in vim
 set noswapfile
 set number relativenumber "lines number
 
@@ -10,10 +11,16 @@ let mapleader=" "
 "escape shortcut
 :imap jj <Esc>
 map <Leader>q :q<CR>
-"plugin: 'git-messenger.vim' shortcut
+"plugin: 'git-messenger.vim'
 nmap <C-w> <Plug>(git-messenger)
-"plugin: 'files-tree' shortcut
+" plugin 'barbar.nvim'
+map <Leader>w :BufferClose<CR>
+"plugin: 'files-tree'
 map <Leader>b :NERDTreeFind<CR>
+" plugin 'vim-fugitive'
+map <Leader>g :Git<Cr>
+map <Leader>gc :Git commit<Cr>
+map <Leader>gp :Git push<Cr>
 
 " Keyboard keys config
 "switch tabs 
@@ -38,7 +45,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}	"lsp
 Plug 'airblade/vim-gitgutter' "git changes marker
 Plug 'tpope/vim-fugitive' "git wrapper
 Plug 'rhysd/git-messenger.vim' "git changes marks
-Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']} "markdown preview
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 Plug 'preservim/nerdtree' "files-tree panel
 Plug 'ryanoasis/vim-devicons' "vim icons (icons for files-tree)
 
@@ -52,9 +59,10 @@ call plug#end()
 "plugins config
 set updatetime=000 "git changes marks init/update time
 let NERDTreeShowHidden=1
+let g:NERDTreeQuitOnOpen=1
 nnoremap <C-b> :NERDTree<CR>
-source $HOME/.config/nvim/config/theme.vim "theme
-source $HOME/.config/nvim/config/discord-presence.vim "discord presence
+source $HOME/.config/nvim/config/theme.vim
+source $HOME/.config/nvim/config/discord-presence.vim
 "lua config
 lua << EOF
 --> dock-bar (lualine)
