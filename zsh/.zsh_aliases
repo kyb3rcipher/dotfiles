@@ -22,7 +22,7 @@ alias reload='source ~/.zshrc'
 alias incognito='unset HISTFILE'
 alias rmvimswap='rm -rf ~/.local/share/nvim/swap'
 [ $TERM = "xterm-kitty" ] && alias ssh="kitty +kitten ssh"
-alias icat='kitty +kitten icat'	# print images on terminal (only with kitty)
+alias icat='kitty +kitten icat --align=left'	# print images on terminal (only with kitty)
 alias update='apt update && apt upgrade -y && apt autoremove --purge -y && apt clean all -y'
 command -v python3 > /dev/null && alias python='python3'	#python is python3
 function rmk(){
