@@ -2,8 +2,8 @@
 
 ## Introduction
 
-- os: `Parrot OS`
-- wm: `Mate`
+- os: `Endevour OS`
+- wm: `Gnome 4*`
 - terminal: `kitty`
 - shell: `zsh`
 - editor: `neovim`
