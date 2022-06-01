@@ -18,7 +18,7 @@ __prompt_command() {
 }
 
 case "$TERM" in
-	xterm-color|alacritty|*-256color) PROMPT_COMMAND=__prompt_command ;;
+	xterm-color|alacritty|xterm-kitty|*-256color) PROMPT_COMMAND=__prompt_command ;;
 	*) PS1='[\u@\h:\w]\$ ' ;;
 esac
 
@@ -30,5 +30,5 @@ export PATH=~/.local/bin:/snap/bin:/usr/sandbox/:/usr/local/bin:/usr/bin:/bin:/u
 [ -f ~/.bash_custom ] && . ~/.bash_custom
 
 # sets defaults for applications
-export VISUAL=vim
+export VISUAL=nvim
 export EDITOR="$VISUAL"
