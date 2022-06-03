@@ -10,14 +10,18 @@ set number relativenumber "lines number
 let mapleader=" "
 "escape shortcut
 :imap jj <Esc>
+"save/exit
+map <Leader>ww :w<CR>
 map <Leader>q :q<CR>
+map <Leader>x :x<CR>
+map <Leader>qq :q!<CR>
 "plugin: 'git-messenger.vim'
 nmap <C-w> <Plug>(git-messenger)
-" plugin 'barbar.nvim'
+"plugin 'barbar.nvim'
 map <Leader>w :BufferClose<CR>
 "plugin: 'files-tree'
 map <Leader>b :NERDTreeFind<CR>
-" plugin 'vim-fugitive'
+"plugin 'vim-fugitive'
 map <Leader>g :Git<Cr>
 map <Leader>gc :Git commit<Cr>
 map <Leader>gp :Git push<Cr>
