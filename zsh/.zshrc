@@ -18,7 +18,7 @@ zstyle ':vcs_info:*' check-for-changes true
 zstyle ':vcs_info:git:*' formats " %{$fg[yellow]%}%b%{$fg[red]%}%m%u%c"	# vcs style
 
 # prompt (by: @jallbrit)
-PROMPT="%B%{$fg[red]%}[%(?:%{$fg[yellow]%}:%{$fg[red]%})% %n%{$fg[green]%}@%{$fg[blue]%}%m\$vcs_info_msg_0_ %{$fg[magenta]%}%c%{$fg[red]%}%(?:]: ✗])%{$fg[white]%}$%{$reset_color%} "
+PROMPT="%B%{$fg[red]%}[%(?:%{$fg[yellow]%}:%{$fg[red]%})% %n%{$fg[green]%}😼%{$fg[blue]%}%m\$vcs_info_msg_0_ %{$fg[magenta]%}%c%{$fg[red]%}%(?:]: ✗])%{$fg[white]%}$%{$reset_color%} "
 
 # PATH
 export PATH="$HOME/.local/bin":$PATH
@@ -32,8 +32,8 @@ HISTFILE=~/.zsh_history
 bindkey "\e[H" beginning-of-line	 # home
 bindkey "\e[F" end-of-line	         # end
 bindkey "\e[3~" delete-char	         # supr
-bindkey '^[[1;5C' forward-word        # ctrl + -> (home)
-bindkey '^[[1;5D' backward-word       # ctrl + <- (end)
+bindkey '^[[1;5C' forward-word       # ctrl + -> (home)
+bindkey '^[[1;5D' backward-word      # ctrl + <- (end)
 
 # plugins
 [ -f /etc/zsh_command_not_found ] && . /etc/zsh_command_not_found
