@@ -1,0 +1,28 @@
+gui:
+  showBottomLine: false
+
+git:
+  paging:
+    colorArg: always
+    pager: delta --dark --paging=never
+
+keybinding:
+  universal:
+    appendNewline: '<tab>'
+
+customCommands:
+  - key: <delete>
+    command: 'rm -rf {{.SelectedFile.Name}}'
+    context: 'files'
+    prompts:
+      - type: 'confirm'
+        title: 'Confirm:'
+        body: 'Are you sure?, you want delete {{.SelectedFile.Name}}'
+
+  - key: <c-r>
+    command: 'git restore {{.SelectedFile.Name}}'
+    context: 'files'
+    prompts:
+      - type: 'confirm'
+        title: "Confirm:"
+        body: "Are you sure?, you want restore {{.SelectedFile.Name}}?"
