@@ -2,7 +2,6 @@
 
 ## My setup
 - os: `Linux` 
-- os: `Linux` 
 - de: `GNOME` 
 - terminal: `kitty`
 - shell: `zsh`
