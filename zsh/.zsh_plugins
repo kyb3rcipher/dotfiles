@@ -1,0 +1,22 @@
+# Plugin source helper (by: @daniruiz)
+_source_plugin() {
+    local plugin_name="$1"
+    for basedir in /usr/share/zsh/plugins /usr/share ~/.local/share
+    do
+        plugin="$basedir/$plugin_name/$plugin_name.zsh"
+        [ -f "$plugin" ] && source "$plugin" && return 0
+    done
+    echo "\033[33m[ ! ]\033[0m ZSH ${plugin_name#zsh-} not installed"
+    return 1
+}
+
+# Sudo
+_source_plugin zsh-sudo
+
+# Autosuggestions
+_source_plugin zsh-autosuggestions
+
+# Syntax Highlighting
+_source_plugin zsh-syntax-highlighting
+
+unset -f _source_plugin
