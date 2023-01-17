@@ -8,10 +8,16 @@ alias chx='chmod +x'
 alias http.server='python -m http.server'
 alias notes='$EDITOR ~/Documents/notes.txt'
 alias reload='source ~/.zshrc; echo "\e[0;34m\e[1mZSH reloaded\e[0m\e[0m"'
+mkd() {
+    mkdir -p "$@" && cd "$@"
+}
+lsix() {
+    montage -tile 7x1 -label %f -background black -fill white "$@" gif:- | convert - -colors 16 sixel:-;
+}
 
 # move
-alias 1.='cd ../'
-alias 2.='cd ../../'
+alias ..='cd ../'
+alias ...='cd ../../'
 alias 3.='cd ../../../'
 alias 4.='cd ../../../../'
 
@@ -36,9 +42,9 @@ alias gfc='git init && git add . && git commit -m "Initial commit"'
 alias gs='git status'
 alias gb='git branch'
 alias gck='git checkout'
-alias gr='git remote'
-alias gra='git remote add'
-alias grv='git remote --verbose'
+alias grm='git remote'
+alias grma='git remote add'
+alias grmv='git remote --verbose'
 alias gp='git push'
 alias gpf='git push --force'
 alias gr='git restore'
