@@ -48,6 +48,7 @@ return require('packer').startup(function(use)
     use 'windwp/nvim-ts-autotag'
     -- Git
     use 'kdheepak/lazygit.nvim'
+    use { 'APZelos/blamer.nvim', config = function() vim.cmd [[let g:blamer_enabled = 1]] end }
     use { 'lewis6991/gitsigns.nvim', config = function() require('gitsigns').setup() end }
     --use 'windwp/nvim-ts-autotag'
 --> Common plugins dependeces
