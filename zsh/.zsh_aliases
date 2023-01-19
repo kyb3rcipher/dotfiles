@@ -11,9 +11,7 @@ alias reload='source ~/.zshrc; echo "\e[0;34m\e[1mZSH reloaded\e[0m\e[0m"'
 mkd() {
     mkdir -p "$@" && cd "$@"
 }
-lsix() {
-    montage -tile 7x1 -label %f -background black -fill white "$@" gif:- | convert - -colors 16 sixel:-;
-}
+command -v lsix > /dev/null || lsix() { montage -tile 7x1 -label %f -background black -fill white "$@" gif:- | convert - -colors 16 sixel:-; }
 
 # move
 alias ..='cd ../'
@@ -58,6 +56,7 @@ alias rmdir='rm -rf'
 alias mkdir='mkdir -p'
 alias chmod='chmod --verbose'
 alias diff='diff --color=auto -r'
+function '$'() { $@ }   # for copy commands
 
 # auto-sudo commands
 alias apt='sudo apt'
