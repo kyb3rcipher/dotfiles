@@ -6,7 +6,6 @@ _source_plugin() {
         plugin="$basedir/$plugin_name/$plugin_name.zsh"
         [ -f "$plugin" ] && source "$plugin" && return 0
     done
-    echo "\033[33m[ ! ]\033[0m ZSH ${plugin_name#zsh-} not installed"
     return 1
 }
 
@@ -18,5 +17,8 @@ _source_plugin zsh-autosuggestions
 
 # Syntax Highlighting
 _source_plugin zsh-syntax-highlighting
+
+# Command not found
+[ -f /etc/zsh_command_not_found ] && source /etc/zsh_command_not_found
 
 unset -f _source_plugin
