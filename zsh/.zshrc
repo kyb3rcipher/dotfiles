@@ -48,6 +48,9 @@ fi
 bindkey '^[[1;5C' forward-word                    # ctrl + ->
 bindkey '^[[1;5D' backward-word                   # ctrl + <-
 bindkey '^[[Z' undo                               # shift + tab undo last action
+bindkey '^[[H' beginning-of-line                  # home
+bindkey '^[[F' end-of-line                        # end
+bindkey '^[[3~' delete-char                       # delete
 
 # set defaults
 if command -v vim > /dev/null; then
