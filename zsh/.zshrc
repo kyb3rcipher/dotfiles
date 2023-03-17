@@ -50,10 +50,10 @@ bindkey '^[[1;5D' backward-word                   # ctrl + <-
 bindkey '^[[Z' undo                               # shift + tab undo last action
 
 # set defaults
-if command -v nvim > /dev/null; then
-    export VISUAL=nvim
-elif command -v vim > /dev/null; then
+if command -v vim > /dev/null; then
     export VISUAL=vim
+elif command -v nvim > /dev/null; then
+    export VISUAL=nvim
 elif command -v vi > /dev/null; then
     export VISUAL=vi
 fi
