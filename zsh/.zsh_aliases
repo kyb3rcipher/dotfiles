@@ -14,6 +14,7 @@ icat() { cat "$@" | convert - -colors 256 -resize 800x600 sixel:-; }
 command -v lsix > /dev/null || lsix() { montage -tile 7x1 -label %f -background black -fill white "$@" gif:- | convert - -colors 256 sixel:-; }
 
 # move
+alias c='cd'
 alias ..='cd ../'
 alias ...='cd ../../'
 alias 3.='cd ../../../'
@@ -24,6 +25,7 @@ alias .zshrc='$EDITOR ~/.zshrc'
 alias .zsh_aliases='$EDITOR ~/.zsh_aliases'
 alias .zsh_plugins='$EDITOR ~/.zsh_plugins'
 alias .zsh_local='$EDITOR ~/.zsh_local'
+alias .vimrc='$EDITOR ~/.vimrc'
 
 # git
 alias g='git'
@@ -31,6 +33,7 @@ alias lg='lazygit'
 alias gcl='git clone'
 alias gpl='git pull'
 alias gi='git init'
+alias gdf='git diff'
 alias ga='git add'
 alias gaa='git add .'
 alias gc='git commit'
@@ -38,6 +41,7 @@ alias gcm='git commit -m'
 alias gac='git add . && git commit'
 alias gca='git commit --amend'
 alias gfc='git init && git add . && git commit -m "Initial commit"'
+alias gl='git log'
 alias gs='git status'
 alias gb='git branch'
 alias gck='git checkout'
@@ -57,7 +61,8 @@ alias rmdir='rm -rf'
 alias mkdir='mkdir -p'
 alias chmod='chmod --verbose'
 alias diff='diff --color=auto -r'
-function '$'() { $@ }   # for copy commands
+'$'() { $@ }   # for copy commands
+'#'() { sudo $@ }  # for super-user copy commands
 
 # auto-sudo commands
 alias apt='sudo apt'
@@ -70,3 +75,4 @@ command -v lsd > /dev/null && alias ls='lsd --group-directories-first' && alias 
 command -v exa > /dev/null && alias exa='lsd --group-directories-first' && alias exa='lsd --group-directories-first --tree'
 command -v bat > /dev/null && alias cat='bat --pager=never' && alias catp='bat --paging=never --style=plain'
 command -v batcat > /dev/null && alias cat='batcat --pager=never' && alias catp='batcat --paging=never --style=plain'
+command -v trash > /dev/null && alias rm='trash' && alias purge='\rm' && alias purgedir='\rm -rf'
