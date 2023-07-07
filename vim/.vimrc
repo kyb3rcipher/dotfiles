@@ -1,5 +1,6 @@
 " Style
 syntax on
+set wrap!
 set background=dark
 
 " General
