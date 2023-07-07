@@ -72,7 +72,6 @@ alias dnf='sudo dnf'
 
 ### better commands ###
 command -v lsd > /dev/null && alias ls='lsd --group-directories-first' && alias tree='lsd --group-directories-first --tree'
-command -v exa > /dev/null && alias exa='lsd --group-directories-first' && alias exa='lsd --group-directories-first --tree'
 command -v bat > /dev/null && alias cat='bat --pager=never' && alias catp='bat --paging=never --style=plain'
 command -v batcat > /dev/null && alias cat='batcat --pager=never' && alias catp='batcat --paging=never --style=plain'
 command -v trash > /dev/null && alias rm='trash' && alias purge='\rm' && alias purgedir='\rm -rf'
