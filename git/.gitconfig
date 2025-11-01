@@ -3,3 +3,11 @@
 	email = me@kyb3rcipher.com
 [init]
 	defaultBranch = main
+
+[core]
+    pager = delta
+
+# delta pager (https://github.com/dandavison/delta) 
+[delta]
+    line-numbers = true
+    side-by-side = true
