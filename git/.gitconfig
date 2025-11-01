@@ -3,7 +3,3 @@
 	email = me@kyb3rcipher.com
 [init]
 	defaultBranch = main
-[commit]
-	gpgsign = true
-[credential]
-	helper = cache --timeout=3600
