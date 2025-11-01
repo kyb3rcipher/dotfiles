@@ -71,6 +71,7 @@ alias pacman='sudo pacman --color=auto'
 alias dnf='sudo dnf'
 
 ### better commands ###
+command -v nala > /dev/null && alias apt='sudo nala'
 command -v lsd > /dev/null && alias ls='lsd --group-directories-first' && alias tree='lsd --group-directories-first --tree'
 command -v bat > /dev/null && alias cat='bat --pager=never' && alias catp='bat --paging=never --style=plain'
 command -v batcat > /dev/null && alias cat='batcat --pager=never' && alias catp='batcat --paging=never --style=plain'
