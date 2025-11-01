@@ -23,7 +23,7 @@ precmd() {
 }
 
 # PROMPT
-PROMPT=$'%B[%(#:%F{red}root:%F{blue}%n%F{red}@%F{green}%m)%F{white}, ${vcs_info_msg_0_}%F{magenta}%*%F{white}, %(?.%F{green}:).%F{red}:()%F{reset}]\n%F{yellow}%(6~.%-1~/…/%4~.%5~) %(#:%F{red}#:%F{reset}$) '
+PROMPT=$'%B[%(#:%F{red}root:%F{blue}%n%F{red}@%F{green}%m)%F{white}, ${vcs_info_msg_0_}%F{magenta}%*%F{white}, %(?.%F{green}★.%F{red}★)%F{reset} ]\n%F{yellow}%(6~.%-1~/…/%4~.%5~) %(#:%F{red}#:%F{reset}$) '
 
 # PATH
 export PATH="$HOME/.local/bin:$PATH"
