@@ -11,3 +11,6 @@
 [delta]
     line-numbers = true
     side-by-side = true
+
+[include]
+    path = ~/.gitconfig_local
